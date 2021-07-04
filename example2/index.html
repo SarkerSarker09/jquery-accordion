@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery Customer Accordion2</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div class="toner_extra_search_accordion_container">
+
+  <div class="toner_extra_search_accordion_head">Category <span class="toner_extra_search_plusminus">+</span></div>
+  <div class="toner_extra_search_accordion_body" style="display: none;">
+    <p>Category description</p>
+  </div>
+
+  <div class="toner_extra_search_accordion_head">Brand  <span class="toner_extra_search_plusminus">+</span></div>
+  <div class="toner_extra_search_accordion_body" style="display: none;">
+    <p>Brand description</p>
+  </div>
+
+  <div class="toner_extra_search_accordion_head">Technology <span class="toner_extra_search_plusminus">+</span></div>
+  <div class="toner_extra_search_accordion_body" style="display: none;">
+    <p>Technology description</p>
+  </div>
+
+  <div class="toner_extra_search_accordion_head">Device Model <span class="toner_extra_search_plusminus">+</span></div>
+  <div class="toner_extra_search_accordion_body" style="display: none;">
+    <p>Device Model description</p>
+  </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+  
+  $(".toner_extra_search_accordion_head").click(function() {
+    if ($('.toner_extra_search_accordion_body').is(':visible')) {
+      $(".toner_extra_search_accordion_body").slideUp(300);
+      $(".toner_extra_search_plusminus").text('+');
+    }
+    if ($(this).next(".toner_extra_search_accordion_body").is(':visible')) {
+      $(this).next(".toner_extra_search_accordion_body").slideUp(300);
+      $(this).children(".toner_extra_search_plusminus").text('+');
+    } else {
+      $(this).next(".toner_extra_search_accordion_body").slideDown(300);
+      $(this).children(".toner_extra_search_plusminus").text('-');
+    }
+  });
+
+});
+
+</script>
+
+</body>
+</html>
+

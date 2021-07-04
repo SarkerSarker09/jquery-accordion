@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery Custom Accordion </title>
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="grid-l1">
+    <div class="box-a1">
+        <h2 class="header">
+          Header
+        </h2>   
+
+        <div class="level-box">
+          <label>Test Input</label>
+          <input type="text">
+        </div>
+    </div> <!-- box-a1 -->
+    <div class="box-a1">
+        <h2 class="header">
+          Header 2
+        </h2>   
+
+        <div class="level-box">
+          <label>Test Input</label>
+          <input type="text">
+        </div>
+    </div> <!-- box-a1 -->
+    <div class="box-a1">
+        <h2 class="header">
+          Header 3
+        </h2>   
+
+        <div class="level-box">
+          <label>Test Input</label>
+          <input type="text">
+        </div>
+    </div> <!-- box-a1 -->
+</div>
+
+
+<script>
+$('body').on('click', '.header', function(e) {
+    $('.box-a1').find('.level-box').stop().slideUp();
+    $(this).closest('.box-a1').find('.level-box').stop().slideToggle();
+});
+</script>
+
+
+
+</body>
+</html>

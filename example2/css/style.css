@@ -1,0 +1,30 @@
+.toner_extra_search_accordion_container {
+  width: 500px;
+}
+
+.toner_extra_search_accordion_head {
+  width: 500px;
+  background-color: #a6ce39;
+  color: white;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 14px;
+  margin: 0 0 1px 0;
+  padding: 7px 11px;
+  font-weight: bold;
+}
+
+.toner_extra_search_accordion_body {
+  background: lightgray;
+}
+
+.toner_extra_search_accordion_body p {
+  padding: 18px 5px;
+  margin: 0px;
+}
+
+.toner_extra_search_plusminus {
+  float: right;
+  margin-left: 100px;  
+}
+
